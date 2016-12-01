@@ -1,0 +1,20 @@
+﻿#header-title{
+    width:75vw;
+}
+
+#geoc-profile {
+    width: 25vw;
+    text-align: center;
+    padding: 5px;
+    padding-right: 2vw;
+    cursor:pointer;
+    height:100%;
+}
+
+#geoc-menu {
+    color: black;
+}
+
+#geoc-menu > li:hover {
+    background-color:lightblue;
+}

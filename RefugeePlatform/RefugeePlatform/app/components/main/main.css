@@ -1,0 +1,21 @@
+﻿#map{
+    height:88vh;
+    width:100vw;
+}
+
+#game {
+    position:absolute;
+    z-index:10000;
+    background: rgba(0,0,0,0.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+    height:100vh;
+    top:0;
+}
+#game > div {   
+    width: 70vw;
+    height: 70vh;
+    background-color:white;
+}

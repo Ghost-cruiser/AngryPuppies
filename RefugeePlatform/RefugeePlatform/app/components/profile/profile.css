@@ -1,0 +1,27 @@
+﻿#avatar-port {
+    background-color:white;
+
+    width:60px;
+    height:60px;
+    float:right;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 3px 0px #9b9b9b;
+    -webkit-box-shadow: 0px 0px 3px 0px #9b9b9b;
+    box-shadow: 0px 0px 3px 0px #9b9b9b;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=NaN, Strength=3);
+}
+
+#userport {
+    display:inline-block;
+}
+
+#user-name {
+    font-size:1.5em;
+}
+
+#userport > div {
+    text-align:center;
+}

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="../../bower_components/angular-bootstrap/ui-bootstrap-csp.css" />
+
+
+    <title>GeoCatching Authentication</title>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2>GeoCatching</h2>
+        </div>
+    </header>
+
+    <!--BODY-->
+
+    <div role="main" class="container">
+        <div id="auth-container"
+             class="flex-line flex-centered">
+
+            <div data-ht-login="">
+            </div>
+
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+
+
+    <div id="bootstraper" style="display:none" data-ng-app="auth.bootstraper"></div>
+    <!--Loading source files-->
+    <!-- #region Prod-->
+    <!--
+
+        TODO :
+        Chargement App : les .js de l'application seront à remplacer par une version .min.js qui est un bundle du module
+                         afin de limiter le temps de chargement
+
+        Chargement Frameworks : les frameworks doivent être appelés via des URL avec un script de fallback sur une version locale
+                                (peut-être pas pour toutes les dépendences, à voir)
+        -->
+    <!-- Local fallbacks
+        <script src="../lib/angularJS/angular.min.js"></script>
+        <script src="../lib/angular-ui/ui-bootstrap-tpls.min.js"></script>
+        <script src="../lib/angular-ui/ui-bootstrap.min.js"></script>
+
+        -->
+    <!-- #endregion-->
+
+    <!-- #region Librairies-->
+    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="../../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="../../bower_components/angular-md5/angular-md5.js"></script>
+    <!-- #endregion-->
+
+    <!-- #region Shared features-->
+    <script src="shared/_shared.js"></script>
+    <script src="shared/authentication/authentication-service.js"></script>
+    <!-- #endregion -->
+    
+    <!-- #region Authentication-->
+    <script src="components/login/_login.js"></script>
+    <script src="components/login/login-directive.js"></script>
+    <!-- #endregion -->
+
+    <!-- #region Inscription-->
+    <script src="components/inscription/_inscription.js"></script>
+    <script src="components/inscription/inscription-directive.js"></script>
+    <!-- #endregion -->
+
+    <!-- #endregion -->
+
+    <!-- #region Authentication-->
+    <script src="_auth.js"></script>
+    <script src="auth-config.js"></script>
+    <script src="auth.bootstraper.js"></script>
+    <!-- #endregion-->
+
+</body>
+
+</html>

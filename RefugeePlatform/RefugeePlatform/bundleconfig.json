@@ -1,0 +1,16 @@
+[
+  {
+    "outputFileName": "app/styles/style.css",
+    "inputFiles": [
+      "common/css/*.css",
+      "app/**/*.css"
+    ]
+  },
+  {
+    "outputFileName": "auth/styles/style.css",
+    "inputFiles": [
+      "common/css/*.css",
+      "auth/**/*.css"
+    ]
+  }
+]

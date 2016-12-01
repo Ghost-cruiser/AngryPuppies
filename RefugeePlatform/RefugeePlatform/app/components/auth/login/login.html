@@ -1,0 +1,29 @@
+﻿<div id="login-container">
+
+    <h1>Authentification</h1>
+
+    <form name="login" role="form" novalidate>
+
+        <div class="form-group">
+            <label for="username">Utilisateur : </label>
+            <input type="text" name="username" data-ng-model="vm.username" placeholder="Entrez votre nom d'utilisateur'" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Mot de passe : </label>
+            <input type="password" name="password" data-ng-model="vm.password" placeholder="Entrez votre mot de passe" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <button data-ng-click="vm.login()" 
+                    class="btn btn-info"
+                    data-ng-disabled="login.username.$dirty && login.username.$invalid || login.password.$dirty && login.password.$invalid">
+                Se connecter
+            </button>
+        </div>
+    </form>
+
+    <div class="alert alert-danger" data-ng-show="login.username.$touched && login.username.$invalid">Veuillez renseigner votre login</div>
+    <div class="alert alert-danger" data-ng-show="login.password.$touched && login.password.$invalid">Veuillez renseigner votre mot de passe</div>
+    <div class="alert alert-danger" data-ng-if="vm.error">{{vm.error}}</div>
+
+</div>

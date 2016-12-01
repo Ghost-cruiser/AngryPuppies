@@ -1,0 +1,14 @@
+{
+  "name": "rp",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "*",
+    "angular-material": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.8",
+    "bootstrap": "3.3.7"
+  },
+  "appPath": "app",
+  "directory": "bower_components"
+}
