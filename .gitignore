@@ -242,6 +242,7 @@ ModelManifest.xml
 .fake/
 /RefugeePlatform/RefugeePlatform/bower_components
 *.cs
+*.sln
 *.config
 *.csproj
 /RefugeePlatform/RefugeePlatform.sln
