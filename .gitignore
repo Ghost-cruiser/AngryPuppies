@@ -241,9 +241,6 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /RefugeePlatform/RefugeePlatform/bower_components
-*.cs
-*.sln
 *.config
-*.csproj
 /RefugeePlatform/RefugeePlatform.sln
 /RefugeePlatform/RefugeePlatform/Gruntfile.coffee
