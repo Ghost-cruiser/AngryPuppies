@@ -9,8 +9,7 @@
             //'ngRoute',    // in discussion
             //'ngCookies', // likely
 
-            // Lib
-            'ui.bootstrap',
+            'ngMaterial',
 
             // App
             'rp.app.shared',

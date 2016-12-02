@@ -18,3 +18,9 @@
 #geoc-menu > li:hover {
     background-color:lightblue;
 }
+
+.navigation {
+    width:80%;
+    margin:0 auto;
+    background-color:red;
+}

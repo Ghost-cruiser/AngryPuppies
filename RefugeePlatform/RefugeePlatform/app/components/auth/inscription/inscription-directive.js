@@ -18,7 +18,7 @@
 
             replace: true,
 
-            templateUrl: 'components/inscription/inscription.html',
+            templateUrl: 'app/components/inscription/inscription.html',
 
             scope: {
                 attrOptionnal: '=?',

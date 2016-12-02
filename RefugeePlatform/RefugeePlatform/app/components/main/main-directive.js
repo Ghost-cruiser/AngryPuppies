@@ -9,15 +9,10 @@
     angular.module('rp.app.main')
         .directive('htMain',
             [
-                '$interval',
-                'rp.app.main.geolocation.geolocation-service',
-                'rp.app.main.areas.areas-service',
-                'rp.app.main.gmap.gmap-service',
-                'rp.app.main.game.game-factory',
                 htMainBuilder
             ]);
 
-    function htMainBuilder($interval, geolocation, areasSvc, gmapSvc, Game) {
+    function htMainBuilder($interval) {
         var directive = {};
 
         angular.extend(directive, {
@@ -25,7 +20,7 @@
 
             replace: true,
 
-            templateUrl: 'components/main/main.html',
+            templateUrl: 'app/components/main/main.html',
 
             scope: false,
 

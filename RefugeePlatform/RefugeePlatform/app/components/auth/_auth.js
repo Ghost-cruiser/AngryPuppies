@@ -3,8 +3,6 @@
 
     angular.module("rp.auth",
         [
-            // Lib
-            'ui.bootstrap',
 
             // App
             'rp.auth.shared',

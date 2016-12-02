@@ -23,7 +23,7 @@
 
             replace: true,
 
-            templateUrl: 'components/login/login.html',
+            templateUrl: 'app/components/login/login.html',
 
             scope: false,
 

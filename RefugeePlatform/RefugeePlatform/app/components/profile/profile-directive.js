@@ -23,7 +23,7 @@
 
             replace: false,
 
-            templateUrl: 'components/profile/profile.html',
+            templateUrl: 'app/components/profile/profile.html',
 
             scope: false,
 

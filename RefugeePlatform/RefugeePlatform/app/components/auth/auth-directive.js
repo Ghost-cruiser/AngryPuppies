@@ -3,18 +3,16 @@
     'use strict';
     /**
     * @ngdoc directive
-    * @name ht-nav
-    * @description Directive of the navigation bar.
+    * @name htMain
+    * @description Main directive of the app.
     */
-    angular.module('rp.app.nav')
-        .directive('htNav',
+    angular.module('rp.app.auth')
+        .directive('htMain',
             [
-                '$mdSidenav',
-
-                htNavBuilder
+                htAuthBuilder
             ]);
 
-    function htNavBuilder($mdSidenav) {
+    function htAuthBuilder($interval) {
         var directive = {};
 
         angular.extend(directive, {
@@ -22,7 +20,7 @@
 
             replace: true,
 
-            templateUrl: 'app/components/nav/nav.html',
+            templateUrl: 'app/components/auth/auth.html',
 
             scope: false,
 
@@ -36,18 +34,12 @@
 
             angular.extend(scope, {
                 vm: {
-                    toggleLeft: buildToggler('left'),
-                    toggleRight: buildToggler('right'),
+                    login: true,
+
                 },
             });
 
             return scope;
-
-            function buildToggler(componentId) {
-                return function () {
-                    $mdSidenav(componentId).toggle();
-                }
-            }
 
         }
         //#endregion
