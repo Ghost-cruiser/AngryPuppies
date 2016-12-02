@@ -1,4 +1,4 @@
-# GeoCatching - Application AngularJS
+# RefugeePlatform - Application AngularJS
 
 Ce projet est une base de site AngularJS 1 illustrant les concepts de base pour créer une application Angular. Il définit notamment:
 
