@@ -1075,7 +1075,6 @@ header{
 }
 body {
     background-color:#fafafa;
-    background-image:url('../../common/images/background.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center 50px; 
