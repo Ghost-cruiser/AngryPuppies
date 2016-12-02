@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
 
     <title>Refugee Platform</title>
 
@@ -41,52 +41,38 @@
 
     <!-- #endregion-->
     <!-- #region Librairies-->
-    <script src="../../bower_components/angular/angular.js"></script>
-    <script src="../../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
-    <script src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
 
     <!--<script src="../lib/angularJS/angular-animate.js"></script>--><!--probably to remove-->
     <!-- #endregion-->
     <!-- #region Shared features-->
-    <script src="shared/_shared.js"></script>
-    <script src="shared/http/http-service.js"></script>
-    <script src="shared/user/user-service.js"></script>
-    <script src="shared/shared-config.js"></script>
+    <script src="app/shared/_shared.js"></script>
+    <script src="app/shared/http/http-service.js"></script>
+    <script src="app/shared/user/user-service.js"></script>
+    <script src="app/shared/shared-config.js"></script>
     <!-- #endregion -->
     <!-- #region Profile-->
-    <script src="components/profile/_profile.js"></script>
-    <script src="components/profile/profile-directive.js"></script>
+    <script src="app/components/profile/_profile.js"></script>
+    <script src="app/components/profile/profile-directive.js"></script>
     <!-- #endregion -->
     <!-- #region Nav-->
-    <script src="components/nav/_nav.js"></script>
-    <script src="components/nav/nav-directive.js"></script>
+    <script src="app/components/nav/_nav.js"></script>
+    <script src="app/components/nav/nav-directive.js"></script>
     <!-- #endregion -->
     <!-- #region Profile-->
-    <script src="components/profile/_profile.js"></script>
-    <script src="components/profile/profile-directive.js"></script>
+    <script src="app/components/profile/_profile.js"></script>
+    <script src="app/components/profile/profile-directive.js"></script>
     <!-- #endregion -->
     <!-- #region Main-->
-
-    <script src="components/main/_main.js"></script>
-    <script src="components/main/main-directive.js"></script>
+    <script src="app/components/main/_main.js"></script>
+    <script src="app/components/main/main-directive.js"></script>
     <!-- #endregion -->
     <!-- #endregion -->
     <!-- #region App-->
-    <script src="app.bootstraper.js"></script>
-    <script src="_app.js"></script>
+    <script src="app/app.bootstraper.js"></script>
+    <script src="app/_app.js"></script>
     <!-- #endregion-->
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <script>
-        !function (A, n, g, u, l, a, r) {
-            A.GoogleAnalyticsObject = l, A[l] = A[l] || function () {
-                (A[l].q = A[l].q || []).push(arguments)
-            }, A[l].l = +new Date, a = n.createElement(g),
-                    r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
-        }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-XXXXX-X');
-        ga('send', 'pageview');
-    </script>
 </body>
 
 
